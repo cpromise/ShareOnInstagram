@@ -12,6 +12,7 @@
 		4A487D601F419C610000ECAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A487D5E1F419C610000ECAD /* Main.storyboard */; };
 		4A487D621F419C610000ECAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A487D611F419C610000ECAD /* Assets.xcassets */; };
 		4A487D651F419C610000ECAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A487D631F419C610000ECAD /* LaunchScreen.storyboard */; };
+		4A487D6D1F419CB70000ECAD /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A487D6C1F419CB70000ECAD /* 3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4A487D611F419C610000ECAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A487D641F419C610000ECAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A487D661F419C610000ECAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A487D6C1F419CB70000ECAD /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "../../힐링/쯔위/3.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4A487D611F419C610000ECAD /* Assets.xcassets */,
 				4A487D631F419C610000ECAD /* LaunchScreen.storyboard */,
 				4A487D661F419C610000ECAD /* Info.plist */,
+				4A487D6C1F419CB70000ECAD /* 3.jpg */,
 			);
 			path = ShareWithInstagram;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					4A487D561F419C610000ECAD = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4FA9D679JQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,6 +130,7 @@
 				4A487D651F419C610000ECAD /* LaunchScreen.storyboard in Resources */,
 				4A487D621F419C610000ECAD /* Assets.xcassets in Resources */,
 				4A487D601F419C610000ECAD /* Main.storyboard in Resources */,
+				4A487D6D1F419CB70000ECAD /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4FA9D679JQ;
 				INFOPLIST_FILE = ShareWithInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seonghyun.ShareWithInstagram;
@@ -274,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4FA9D679JQ;
 				INFOPLIST_FILE = ShareWithInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seonghyun.ShareWithInstagram;
