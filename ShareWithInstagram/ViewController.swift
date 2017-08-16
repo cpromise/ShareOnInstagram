@@ -39,12 +39,12 @@ extension ViewController: UIDocumentInteractionControllerDelegate {
         if UIApplication.shared.canOpenURL(instagramUrl) {
             let imageData = UIImageJPEGRepresentation(photo, 1.0)!
             
-            let writePath = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("instagram.ig")
+            let writePath = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("instagram.igo")
             do {
                 try imageData.write(to: writePath)
                 documentsInteractionsController = UIDocumentInteractionController(url: writePath)
                 documentsInteractionsController.delegate = self
-                documentsInteractionsController.uti = "com.instagram.photo"
+                documentsInteractionsController.uti = "com.instagram.exclusivegram"
                 documentsInteractionsController.presentOpenInMenu(from: CGRect.zero, in: self.view, animated: true)
             }catch {
                 return
