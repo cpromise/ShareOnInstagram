@@ -27,18 +27,17 @@ class ViewController: UIViewController {
     private func shareOnInstagram() {
         guard let image = imageView.image else { return }
         
-        shareOnInstagram(image, text: "텍스트")
+        shareOnInstagram(image)
     }
     
 }
 
 extension ViewController: UIDocumentInteractionControllerDelegate {
-    func shareOnInstagram(_ photo: UIImage, text: String?) {
+    func shareOnInstagram(_ photo: UIImage) {
         let instagramUrl = URL(string: "instagram://app")!
         
         if UIApplication.shared.canOpenURL(instagramUrl) {
             let imageData = UIImageJPEGRepresentation(photo, 1.0)!
-            let captionString = text ?? ""
             
             let writePath = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("instagram.ig")
             do {
@@ -46,7 +45,6 @@ extension ViewController: UIDocumentInteractionControllerDelegate {
                 documentsInteractionsController = UIDocumentInteractionController(url: writePath)
                 documentsInteractionsController.delegate = self
                 documentsInteractionsController.uti = "com.instagram.photo"
-                documentsInteractionsController.annotation = ["InstagramCaption": captionString]
                 documentsInteractionsController.presentOpenInMenu(from: CGRect.zero, in: self.view, animated: true)
             }catch {
                 return
